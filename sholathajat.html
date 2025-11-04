@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shalat Tahajjud — Contoh Layout</title>
+  <style>
+    /* Reset kecil */
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      background: #fff;
+      color: #111;
+      margin: 0;
+      padding: 20px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Container seperti kolom sempit di contoh */
+    .paper {
+      max-width: 480px;      /* sesuaikan lebar mirip gambar */
+      margin: 0 auto;
+      padding: 18px 22px;
+    }
+
+    /* Judul */
+    .title {
+      text-align: center;
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-size: 34px;      /* besar seperti gambar */
+      margin: 6px 0 18px;
+    }
+
+    /* Paragraf umum */
+    p {
+      margin: 0 0 12px;
+      line-height: 1.35;
+      text-align: justify;  /* rata kanan-kiri */
+      font-size: 16px;
+    }
+
+    /* Paragraf pembuka diberi indent */
+    .lead {
+      text-indent: 30px;    /* menjorok seperti contoh */
+      margin-bottom: 10px;
+    }
+
+    /* Subjudul kecil / tebal */
+    .sub {
+      font-weight: 700;
+      margin: 6px 0 10px;
+      font-size: 16px;
+    }
+
+    /* Daftar bernomor dengan hanging indent */
+    ol.hanging {
+      counter-reset: item;
+      margin: 0 0 14px 0;
+      padding-left: 0;
+      list-style: none; /* kita buat nomor sendiri */
+    }
+
+    ol.hanging li {
+      counter-increment: item;
+      position: relative;
+      padding-left: 46px;    /* ruang untuk nomor di kiri */
+      margin-bottom: 10px;
+      text-align: justify;
+      line-height: 1.35;
+      font-size: 16px;
+    }
+
+    /* nomor styling */
+    ol.hanging li::before {
+      content: counter(item) ".";
+      position: absolute;
+      left: 6px;
+      top: 0;
+      width: 34px;
+      text-align: left;
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    /* Penutup/spacing akhir */
+    .footer {
+      margin-top: 18px;
+      font-size: 15px;
+      text-align: left;
+    }
+
+    /* Responsive: kecilkan font bila layar sempit */
+    @media (max-width:420px){
+      .paper { padding: 14px; }
+      .title { font-size: 28px; }
+      p, ol.hanging li, ol.hanging li::before { font-size: 15px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="paper">
+ <h1 style="text-align:center;">(SHOLAT HAJAT)</h1>
+<b><i>
+    <p class="lead">
+      Sholat sunnat hajat dikerjakan apabila kita mempunyai hajat (keinginan) dengan memohon agar apa yang menjadi keinginan kita dikabulkan oleh Allah SWT. Waktunya tidak tertentu, boleh dilakukan diwaktu siang dan diwaktu malam. Tapi lebih utama dikerjkan pada malam hari.
+    </p>
+<p class="lead">Adapun Keutanaanya Adalah:</p>
+<p class="lead">Rasullah Bersapda:</p>
+    <p class="lead">
+     Barang siapa yang berwudhu dan sempurna wudhunya, kemudian shalat dua rakaat (Shalat Hajat) dan sempurna rakaatnya maka Allah berikan apa yang ia pinta cepat atau lambat." (HR Ahmad)
+    </p>
+    </b></i>
+   <h3 style="text-align:center;">(NIAT SHOLAT SHOLAT HAJAT)</h3>
+
+<b><i></i>
+<p style="text-align: center;">أصَلِّي سُنَّةَ الْحَاجَةِ رَكْعَتَيْنِ لِلَّهِ تَعَالَى</p>
+<p style="text-align: center;">  نية كوله اصلاة سنة حاجة دواء ركعة كرنا الله تعالى </p>
+<p style="text-align: center;">Saya niat sholat hajat dua rokaat karena Allah ta'ala" </p>
+<h4>Caranya:</h4>
+<p class="lead">Cara Sholat Hajat ini bermacam-macam, diantaranya ada yang mengerjakan dengan dua rokaat dengan satu kali salam. Kemudian berdo'a.</p>
+ <p class="lead">Ada juga yang mengerjakan empat rokaat dengan dua kali salam dan setiap selesai membaca fatihah membaca:</p>
+<p>Rokaat pertama membaca surat al-Ikhlash 40x<p></p>
+Rokaat kedua membaca surat al-Ikhlash 30x<p></p>
+Rokaat ketiga membaca surat al-Ikhlash 20x<p></p>
+Rokaat keempat membaca surat al-Ikhlash 10x<p></p>
+Kemudian setelah salam melakukan sujud syukur. Dalam sujud syukur tersebut membaca:</p>
+<p>لا إِلَهَ إِلا أَنْتَ سُبْحَانَكَ إِنِّي كُنْتُ مِنَ
+الظَّالِمِينَ 100x</p>
+<p class="lead">Kemudian setelah sujud, duduk dengan khusyu' dan membaca:</p>
+<h4>اسْتَغْفِرُ اللهَ الْعَظِيمَ × 100</h4>
+<h4>صَلَّى اللهُ عَلَى مُحَمَّدٍ × 100</h4>
+<h4>لا إِلهَ إِلَّا اللهُ × 100</h4>
+</b></i>
+</main>
+</body>
+</html>
